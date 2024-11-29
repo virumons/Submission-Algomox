@@ -1,0 +1,127 @@
+html,
+* {
+  padding: 0%;
+  margin: 0%;
+  overflow: hidden;
+}
+body {
+  background-color: #0a0a0c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  overflow-x: hidden;
+}
+
+@media (min-width: 300px) and (max-width: 768px) {
+  .bg_img > img {
+    position: absolute;
+    top: -20%;
+    left: 0;
+    height:100%;
+    width: 100%;
+    z-index: -1;
+  }
+
+  .box {
+    position: absolute;
+    bottom: 0;
+    height: 55%;
+    width: auto;
+    /* border: 2px solid wheat; */
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    background-color: #0d0d0d;
+    display: flex;
+    justify-content: flex-start start;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+
+  .logo {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-family: "Sora";
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding: 0% 0% 0% 10%;
+    /* border: 2px solid white; */
+  }
+
+  .logo > img {
+    height: 45%;
+    width: auto;
+    /* border: 2px solid white; */
+  }
+  .logo > h3 {
+    padding: 2% 0% 0% 4%;
+    font-size: 2rem;
+    /* border: 2px solid white; */
+  }
+
+  .message {
+    /* border: 2px solid white; */
+    margin: 0%;
+    padding: 0% 0% 2% 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: "Inter";
+  }
+  .message > h4 {
+    margin: 0%;
+    padding: 0% 10% 5% 0%;
+    text-align: left;
+    font-weight: 500;
+    font-size: larger;
+    /* border: 2px solid white; */
+  }
+  .message > p {
+    text-align: left;
+    margin: 0%;
+    padding: 0% 10% 5% 0%;
+    font-weight: lighter;
+    /* border: 2px solid white; */
+  }
+
+  .button {
+    /* border: 2px solid white; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 3% 0% 3% 0%;
+    width: 90%;
+    border-radius: 2.5rem;
+    background-color: #36363665;
+  }
+
+  #login,
+  #signup {
+    color: white;
+    font-family: "poppins";
+    text-align: center;
+    border-radius: 3rem;
+    height: 3.5em;
+    width: 10em;
+    margin: 1%;
+    border-style: none;
+  }
+  #login {
+    background-color: #1651d3;
+  }
+  #signup {
+    background-color: #3636362b;
+  }
+}

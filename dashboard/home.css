@@ -1,0 +1,186 @@
+html,
+* {
+  overflow: hidden;
+  overflow-x: hidden;
+}
+body {
+  overflow-x: hidden;
+  background-color: #111111;
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  /* min-height: 100%; 
+  width: 100%; */
+  margin: 0;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 10%;
+  filter: blur(8em);
+  background: linear-gradient(to top, #0a0a0c, #1253e0);
+  border-radius: 50%;
+  z-index: -1;
+}
+@media (min-width: 300px) and (max-width: 768px) {
+  .account {
+    margin-bottom: 2%;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 7%;
+    padding-left: 3%;
+    padding-right: 5%;
+    /* border: 2px solid white; */
+  }
+  .profile {
+    display: flex;
+    flex-direction: row;
+  }
+  .profile > p {
+    padding: 0% 0% 3% 5%;
+    font-size: smaller;
+    font-family: "Inter";
+    margin: 0%;
+  }
+  .account > img {
+    /* border: 2px solid white; */
+    justify-content: end;
+  }
+
+  .addList {
+    margin-top: 5%;
+    font-family: "Inter";
+    /* border: 2px solid white; */
+    padding: 2%;
+    background-color: #3a70e5;
+    border-radius: 0.9em;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+
+  #list {
+    width: 40%;
+    font-size: small;
+  }
+  #button {
+    background-color: #000000;
+    border: 1px solid #4c4c4c;
+    border-radius: 0.9em;
+    width: 40%;
+    display: flex;
+    padding: 0%;
+    justify-content: center;
+    align-items: center;
+  }
+  #button > input {
+    outline: none;
+    background-color: transparent;
+    color: white;
+    border-style: none;
+    padding: 0%;
+  }
+
+  .fav,
+  .recent {
+    /* border: 2px solid white; */
+    color: white;
+    font-family: "Inter";
+    font-size: small;
+  }
+  #no,
+  #location {
+    /* border: 2px solid white; */
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+    border-radius: 0.9em;
+    background-color: #26262661;
+  }
+
+  #location {
+    padding: 2%;
+    justify-content: space-around;
+  }
+  #location > #hospital {
+    font-style: italic;
+    font-weight: 100;
+  }
+
+  .suggest {
+    font-family: "Inter";
+    font-size: small;
+    padding: 2%;
+    color: white;
+  }
+
+  #apple {
+    background-color: #26262661;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 20%;
+    height: 10%;
+    padding: 3%;
+    border-radius: 0.9em;
+    margin: 0%;
+  }
+  #apple > img {
+    height: 50%;
+    width: 50%;
+  }
+  #apple > p {
+    padding: 0%;
+    margin: 0%;
+  }
+  #offer {
+    border-radius: 0.9em;
+    padding: 7%;
+    margin: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+    background-color: #fcd454;
+    height: 20%;
+  }
+
+  #offer > p {
+    padding: 0%;
+    margin: 0%;
+  }
+
+  footer {
+    position: fixed;
+    color: white;
+    border: 2px solid #1a1a1a;
+    width: 100%;
+    margin: 0%;
+    background-color: #171717;
+    display: flex;
+    margin-top: auto;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    bottom: 0%;
+  }
+  #home_icon {
+    display: flex;
+    flex-direction: row;
+    background-color: #3a70e5;
+    border-radius: 2em;
+    padding: 2% 7% 2% 7%;
+  }
+}

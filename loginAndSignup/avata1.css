@@ -1,0 +1,74 @@
+body{
+    background-color: #000000;
+
+}
+@media(min-width:300px) and (max-width:768px){
+    .intro{
+        color: white;
+        font-family: "inter";
+        font-style: italic;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 500;
+        /* padding-top: 2%; */
+        font-size: medium;
+    }
+
+    .avatar{
+        height: 70%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .avatar>img{
+        margin: 0%;
+        padding: 0%;
+        height: 30%;
+        width: 90%;
+    }
+    .last{
+        padding: 0%;
+        margin: 0%;
+    }
+    .info{
+        /* border: 2px solid white; */
+        padding: 5% 0% 5% 2%;
+        font-family: "Inter";
+    }
+    #info{
+        /* border: 2px solid white; */
+        margin: 0%;
+        padding: 0%;
+        color: white;
+    }
+    .info>h5{
+        font-size: medium;
+        font-weight: 350;
+    }
+    .info>p{
+        font-size: smaller;
+        font-weight: 200;
+    }
+    .login{
+
+        /* border: 2px solid white; */
+        background: linear-gradient(120deg, #3B71E5, #0C46C3);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "inter";
+        border-radius: .7em;
+        height: 2.8em;
+        margin-top: 0%;
+      }
+      .login>input{
+     border:none;
+        color: white;
+        outline: none;    
+        background-color: transparent;
+        font-family: "Inter";
+        font-weight: 500;
+      }
+}

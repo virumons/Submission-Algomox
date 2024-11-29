@@ -1,0 +1,131 @@
+body {
+  background-color: #111111;
+  color: white;
+  position: relative;
+}
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 10%;
+  filter: blur(8em);
+  background: linear-gradient(to top, #0a0a0c, #1253e0);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+@media (min-width: 300px) and (max-width: 768px) {
+  .intro {
+    font-family: "Poppins";
+    margin-top: 25%;
+    color: white;
+  }
+  .intro > h4 {
+    font-weight: 500;
+    font-size: larger;
+    margin: 0%;
+    padding: 0%;
+    /* border: 2px solid wheat; */
+  }
+  .intro > p {
+    font-style: italic;
+    margin: 0%;
+    font-weight: 300;
+    /* border: 2px solid wheat; */
+  }
+
+  .form {
+    font-family: "Inter";
+    /* border: 2px solid wheat; */
+    padding: 5% 0% 0% 2%;
+
+  }
+  .form>p{
+    font-size: .9em;
+    font-weight: 300;
+  }
+  #username,
+  #pass {
+    /* height: 2.9rem; */
+    display: flex;
+    padding: 0% 0% 0% 2%;
+    background-color: #2424245a;
+    border-radius: .7rem;
+    border: 1px solid #4C4C4C;
+    /* border: 2px solid wheat; */
+  }
+  #eye{
+    padding: 0% 0% 0% 20%;
+  }
+  input {
+    color: #5D5C5C;
+    background: none;
+    outline: none;
+    border-style: none;
+    padding: 5% 0% 5% 5%;
+  }
+/* .form > img{
+    height:1em;
+    width: 1em;
+} */
+  .forgot{
+    font-size: small;
+    font-weight: 100;
+    display: flex;
+    height: 2em;
+    justify-content: flex-end;
+    padding: 0%;
+    margin: 0%;
+        /* border: 2px solid wheat; */
+
+  }
+
+  .or{
+        /* border: 2px solid wheat; */
+font-family: "inter";
+font-size: small;
+font-weight: 200;
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .google{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #google_logo,#apple{
+    background-color: #2424245a;
+    border:1px solid #4C4C4C;
+    border-radius: .7rem;
+    height: 1.5rem;
+    padding: 2% ;
+    margin: 2%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .login{
+    background: linear-gradient(120deg, #3B71E5, #0C46C3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "inter";
+    border-radius: .7em;
+    height: 3em;
+
+    margin-top: 2em;
+  }
+  .login>input{
+    color: white;
+    font-family: "Inter";
+    font-weight: 500;
+  }
+}
